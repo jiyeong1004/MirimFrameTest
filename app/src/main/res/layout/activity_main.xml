@@ -5,25 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
 
         <Button
+            android:id="@+id/btn_dog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="강아지"/>
 
         <Button
+            android:id="@+id/btn_cat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="고양이"/>
 
         <Button
+            android:id="@+id/btn_rabbit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="토끼"/>
@@ -35,9 +40,11 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linear_dog"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#ffff00">
+            android:background="#ffff00"
+            android:visibility="invisible">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -48,9 +55,11 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linear_cat"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#7DFFF0">
+            android:background="#7DFFF0"
+            android:visibility="invisible">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -61,9 +70,11 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linear_rabbit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#EE89FF">
+            android:background="#EE89FF"
+            android:visibility="invisible">
 
             <ImageView
                 android:layout_width="match_parent"
